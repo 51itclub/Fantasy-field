@@ -1,11 +1,14 @@
 // 登录
-var check = $("#result").text() != ' ' ? true : false;
+var check = $("#result").text() == 'n' ? false : true;
 function check_login(){
 	var user=$("#user").val();
 	var pass=$("#password").val();
 	var verifycode = $("#verifycode").val();
 	if(user=="" || pass==""){
 		msg('#msg','用户名或密码不能为空！');
+		return false;
+	}else if(verifycode==""){
+		msg('#msg','验证码不能为空！');
 		return false;
 	}
 	event.preventDefault();

@@ -45,7 +45,7 @@
                 <ul class="nav masthead-nav">
  					<li class="active" <?php echo $AUTH=='' ? '' : 'style="display: none;"';?>><a href="javascript:volid(0)" id="form-btn" data-show-layer="hw-layer-login" role="button">注册 / 登录</a></li>
 					<li class="dropdown" <?php echo $AUTH!='' ? '' : 'style="display: none;"';?> id="dropdown">
-						<a href="javascript:volid(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="result"><?php echo $AUTH;?> </span><span class="caret"></span></a>
+						<a href="javascript:volid(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="result"><?php echo $AUTH.$tourist;?></span> <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="<?php echo PATH_URL;?>Admin/Index/IndexAction.html">个人中心</a></li>
 							<li><a href="javascript:volid(0)" id="logout">退出</a></li>
